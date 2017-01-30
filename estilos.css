@@ -1,98 +1,132 @@
-ul#menu, aside, main, figure, figcaption{box-sizing:border-box}
-ul#menu, aside, main{
-	vertical-align:text-top;padding:15px 5px 5px 5px}
-h1, h2, ul, li, p{margin:0px;}
-ul#menu{
-	background-color:#ffaaaa;
-	width:20%;
-	display:inline-block;
+ul#menu, aside, main, figure, figcaption {
+	box-sizing: border-box
 }
-ul#menu li {list-style-type:none}
-ul#menu li a{text-decoration:none;color:darkblue}
-nav{text-align:center;padding:10px}
-aside{
-	background-color:#aaffaa;
-	width:20%;
-	display:inline-block;
+
+ul#menu, aside, main {
+	vertical-align: text-top;
+	padding: 15px 5px 5px 5px
 }
-main{
-	background-color:#aaaaff;
-	width:60%;
-	display:inline-block;
+
+h1, h2, ul, li, p {
+	margin: 0px;
 }
-footer, header{
-	background-color:#ffffaa;
-	text-align:center;
+
+ul#menu {
+	background-color: #ffaaaa;
+	width: 20%;
+	display: inline-block;
 }
-figure{
-	width:200px;
-	height:200px;
-	text-align:center;
-	float:left;
-	border:1px solid black;
-	background-color:white;
-	overflow:hidden;
+
+ul#menu li {
+	list-style-type: none
 }
-figure img{
-  height:80%;
-  display:block;
-  margin:auto;
-  padding:10px;
+
+ul#menu li a {
+	text-decoration: none;
+	color: darkblue
 }
-figure figcaption{
-	border-top:2px solid black;
-	background-color:#dddddd;
-	height:20%;
+
+nav {
+	text-align: center;
+	padding: 10px
+}
+
+aside {
+	background-color: #aaffaa;
+	width: 20%;
+	display: inline-block;
+}
+
+main {
+	background-color: #aaaaff;
+	width: 60%;
+	display: inline-block;
+}
+
+footer, header {
+	background-color: #ffffaa;
+	text-align: center;
+}
+
+figure {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	float: left;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+}
+
+figure img {
+	height: 80%;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+figure figcaption {
+	border-top: 2px solid black;
+	background-color: #dddddd;
+	height: 20%;
 }
 /*********** Menu DropDown ***************/
-
-nav{
-	background-color:white;
-}
-nav ul{
-	margin:0;
-	padding:0;
-	list-style-type:none;
-	text-align:center;
-}
-nav ul li{
-	display:table-cell;
-	width:150px;
-	position:relative;
-}
-nav ul li a{
-	display:block;
-	color:black;
-	background-color:white;
-	line-height:50px;
-	text-decoration:none;
-}
-nav ul li a:hover{
-	color:white;
-	background-color:black;
-	font-weight:bold;
-}
-nav ul li ul{
-	position:absolute;
-	overflow:hidden;
-	max-height:0px;
-	background-color:red;
-	transition:max-height 1s;
-}
-nav ul li:hover ul{
-	max-height:300px;
-}
-nav ul li ul li{
-	display:block;
+nav {
+	background-color: white;
+	border: 1px solid red;
+	padding:0; /*para aquitar espacios entra cajas*/
 }
 
+nav ul {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid green;*/ /*quitamos los bordes*/
+	list-style-type: none;
+	text-align: center;
+}
 
+nav>ul {
+	width: 600px;
+	margin: auto; /*para centrar la caja*/
+}
 
+nav ul li {
+	display: table-cell;
+	width: 150px;
+	position: relative;
+}
 
+nav ul li a {
+	display: block;
+	color: black;
+	background-color: white;
+	line-height: 50px;
+	text-decoration: none;
+}
 
+nav ul li a:hover {
+	color: white;
+	background-color: black;
+	font-weight: bold;
+}
 
+nav ul li ul {
+	position: absolute;
+	overflow: hidden;
+	max-height: 0px;
+	background-color: red;
+	transition: max-height 1s;
+	
+}
 
+nav ul li ul li a{ /* los enlaces dentro de li dentro de ul ....*/
+	background-color: #d9d9d9; /* porner colores a los desplegables*/
+}
 
+nav ul li:hover ul {
+	max-height: 300px;
+}
 
-
-
+nav ul li ul li {
+	display: block;
+}
