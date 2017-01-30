@@ -1,3 +1,7 @@
+body{
+	font-family:sans; /* le ha quitado los rabitos*/
+}
+
 ul#menu, aside, main, figure, figcaption {
 	box-sizing: border-box
 }
@@ -6,6 +10,8 @@ ul#menu, aside, main {
 	vertical-align: text-top;
 	padding: 15px 5px 5px 5px
 }
+
+
 
 h1, h2, ul, li, p {
 	margin: 0px;
@@ -32,6 +38,7 @@ nav {
 }
 
 aside {
+	
 	background-color: #aaffaa;
 	width: 20%;
 	display: inline-block;
@@ -41,11 +48,17 @@ main {
 	background-color: #aaaaff;
 	width: 60%;
 	display: inline-block;
+	background-color:#cccccc;
 }
 
 footer, header {
-	background-color: #ffffaa;
+	/*background-color: #ffffaa;*/
 	text-align: center;
+}
+
+header h1{
+	padding: 15px 0; /*agrandar apuntes*/
+	border-bottom:8px solid #ffffaa
 }
 
 figure {
@@ -73,7 +86,7 @@ figure figcaption {
 /*********** Menu DropDown ***************/
 nav {
 	background-color: white;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	padding:0; /*para aquitar espacios entra cajas*/
 }
 
@@ -106,7 +119,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: white;
-	background-color: black;
+	background-color: green; /* color solo al enlace pero a poner el mouse encima*/
 	font-weight: bold;
 }
 
@@ -115,6 +128,7 @@ nav ul li ul {
 	overflow: hidden;
 	max-height: 0px;
 	background-color: red;
+	box-shadow: 10px 10px 15px #888888;  /* poner sombars*/
 	transition: max-height 1s;
 	
 }
